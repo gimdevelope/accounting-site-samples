@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Slatewater Tax — Tax returns for individuals, freelancers and one-person businesses</title>
+<meta name="description" content="Sample website. A small tax office that takes your papers by phone, shows you where your return stands, and hands you a one-page summary when it is filed.">
+<meta property="og:title" content="Slatewater Tax — send your papers from your phone">
+<meta property="og:description" content="Sample website for a fictional three-person tax office. Send, review, sign, filed: four steps you can follow.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Slatewater Tax (sample)">
+<meta name="theme-color" content="#0b3f48">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230b3f48'/%3E%3Cpath d='M8 12h16M8 17h16M8 22h9' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'/%3E%3Ccircle cx='23' cy='22' r='2.4' fill='%23ff9a82'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="sample-strip" role="note">Sample website — not a real firm</div>
+
+<header class="head">
+  <div class="wrap head-in">
+    <a class="brand" href="#top" aria-label="Slatewater Tax, home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="currentColor"/><path d="M8 12h16M8 17h16M8 22h9" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><circle cx="23" cy="22" r="2.4" fill="#ff9a82"/></svg>
+      <span class="brand-name">Slatewater <span>Tax</span></span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#who">Who we help</a>
+      <a href="#papers">Your papers</a>
+      <a href="#office">The office</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <a class="head-call" href="tel:+15550100163"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h3l1.4 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.4v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>(555) 010-0163</span></a>
+    <a class="btn btn-sm head-cta" href="#contact">Request a consultation</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 1. HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="tag"><span class="dot"></span>Individuals · Freelancers · Solo owners</p>
+      <h1>Send your tax papers from your phone. <em>See every step.</em></h1>
+      <p class="lede">A three-person tax office. You send photos of your forms, we prepare the return, and you can check where it stands any time. When it is filed, you get one page that explains it.</p>
+      <div class="cta-row">
+        <a class="btn btn-main" href="#contact">Request a consultation</a>
+        <a class="btn btn-ghost" href="tel:+15550100163">Call (555) 010-0163</a>
+      </div>
+      <ul class="promise" aria-label="What to expect">
+        <li><b>3</b><span>fields on the form</span></li>
+        <li><b>1</b><span>business day to reply</span></li>
+        <li><b>4</b><span>steps you can follow</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-board" aria-label="Illustration: a return status board">
+      <div class="board card-float" id="board">
+        <div class="board-top">
+          <div>
+            <p class="mini">Your return</p>
+            <p class="board-title">Status board</p>
+          </div>
+          <span class="chip chip-live"><i></i>Step <span id="board-n">2</span> of 4</span>
+        </div>
+        <ol class="board-steps">
+          <li data-s="1" class="done"><span class="st-ic"></span><div><b>Received</b><small>We have your papers</small></div><span class="st-tag">Done</span></li>
+          <li data-s="2" class="now"><span class="st-ic"></span><div><b>In review</b><small>A preparer is working on it</small></div><span class="st-tag">Now</span></li>
+          <li data-s="3"><span class="st-ic"></span><div><b>Ready to sign</b><small>You read it, then sign</small></div><span class="st-tag">Next</span></li>
+          <li data-s="4"><span class="st-ic"></span><div><b>Filed</b><small>Summary page sent to you</small></div><span class="st-tag">Next</span></li>
+        </ol>
+        <div class="board-bar" aria-hidden="true"><span id="board-fill"></span></div>
+      </div>
+      <div class="note-card note-a" aria-hidden="true">
+        <span class="note-ic"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div><b>Photo received</b><small>Form W-2 · readable</small></div>
+      </div>
+      <div class="note-card note-b" aria-hidden="true">
+        <span class="note-ic alt"><svg viewBox="0 0 24 24"><path d="M12 7v5.5M12 16.5v.1" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+        <div><b>1 question for you</b><small>Answer by text or email</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- strip of paper types -->
+<div class="ticker" aria-label="Papers we commonly work from">
+  <div class="ticker-track">
+    <ul>
+      <li>W-2</li><li>1099-NEC</li><li>1099-K</li><li>1099-INT</li><li>1099-DIV</li><li>1098</li><li>1095-A</li><li>Schedule K-1</li><li>Mileage log</li><li>Receipts</li><li>Last year's return</li>
+    </ul>
+    <ul aria-hidden="true">
+      <li>W-2</li><li>1099-NEC</li><li>1099-K</li><li>1099-INT</li><li>1099-DIV</li><li>1098</li><li>1095-A</li><li>Schedule K-1</li><li>Mileage log</li><li>Receipts</li><li>Last year's return</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 2. HOW IT WORKS -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="tag"><span class="dot"></span>How it works</p>
+      <h2>Four steps. You always know <em>which one you are on.</em></h2>
+      <p class="sec-sub">No folder to drop off and no wondering. Each step has one thing for you to do and one thing we do.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <div class="step-top"><span class="num">01</span><span class="chip">You: about 10 minutes</span></div>
+        <h3>Send</h3>
+        <p>Take photos of your forms and upload them through a private link. No app to install.</p>
+        <div class="mock mock-upload" aria-hidden="true">
+          <div class="tile ok"><i></i><span>W-2</span></div>
+          <div class="tile ok"><i></i><span>1099-NEC</span></div>
+          <div class="tile ok"><i></i><span>1098</span></div>
+          <div class="tile add"><i></i><span>Add photo</span></div>
+        </div>
+      </li>
+      <li class="step reveal">
+        <div class="step-top"><span class="num">02</span><span class="chip">Us: prepare and check</span></div>
+        <h3>Review</h3>
+        <p>A preparer builds your return and a second person checks it. If something is missing, you get one clear question.</p>
+        <div class="mock mock-chat" aria-hidden="true">
+          <p class="bubble them"><b>Slatewater</b>Did you work from home all year, or part of it?</p>
+          <p class="bubble me">Part of it. March on.</p>
+          <p class="bubble-meta">Answered · back to review</p>
+        </div>
+      </li>
+      <li class="step reveal">
+        <div class="step-top"><span class="num">03</span><span class="chip">You: read, then sign</span></div>
+        <h3>Sign</h3>
+        <p>We walk you through the return in plain words. You sign on your phone once it makes sense to you.</p>
+        <div class="mock mock-sign" aria-hidden="true">
+          <div class="sign-row"><span>Taxpayer</span><svg viewBox="0 0 120 30"><path d="M4 22c8-14 12-16 14-8s4 10 10 0 8-8 10 2 8 4 14-4 10-6 12 2 10 6 22 2 20-6 30-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div class="sign-row empty"><span>Spouse</span><em>Tap to sign</em></div>
+          <p class="bubble-meta">1 of 2 signatures</p>
+        </div>
+      </li>
+      <li class="step step-dark reveal">
+        <div class="step-top"><span class="num">04</span><span class="chip">Us: file and confirm</span></div>
+        <h3>Filed</h3>
+        <p>We e-file, confirm it was accepted, and send you a one-page summary to keep.</p>
+        <div class="mock mock-filed" aria-hidden="true">
+          <div class="filed-row"><span class="tick"></span><b>Federal</b><em>Accepted</em></div>
+          <div class="filed-row"><span class="tick"></span><b>State</b><em>Accepted</em></div>
+          <div class="filed-row doc"><span class="pg"></span><b>Summary page</b><em>Sent</em></div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 3. WHO WE HELP -->
+<section class="sec sec-dark" id="who">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="tag"><span class="dot"></span>Who we help</p>
+      <h2>Built for people who file for <em>themselves.</em></h2>
+      <p class="sec-sub">We do not take on large companies. That keeps the office small enough to answer you.</p>
+    </div>
+    <div class="who-tabs" role="tablist" aria-label="Client types">
+      <button role="tab" id="t1" aria-controls="p1" aria-selected="true">Individuals &amp; families</button>
+      <button role="tab" id="t2" aria-controls="p2" aria-selected="false">Freelancers</button>
+      <button role="tab" id="t3" aria-controls="p3" aria-selected="false">One-person businesses</button>
+    </div>
+    <div class="who-panels">
+      <article class="who" id="p1" role="tabpanel" aria-labelledby="t1">
+        <div class="who-main">
+          <h3>Individuals &amp; families</h3>
+          <p>A paycheck, a home, kids, maybe some savings interest. You want it done right and you want to understand what was filed.</p>
+          <ul class="tags"><li>W-2</li><li>1098</li><li>1099-INT</li><li>1095-A</li></ul>
+        </div>
+        <ul class="who-list">
+          <li><b>You send</b><span>Wage forms, mortgage and childcare statements</span></li>
+          <li><b>We handle</b><span>Federal and state returns, filed together</span></li>
+          <li><b>You get</b><span>One page: what was filed and what to keep</span></li>
+        </ul>
+      </article>
+      <article class="who" id="p2" role="tabpanel" aria-labelledby="t2">
+        <div class="who-main">
+          <h3>Freelancers</h3>
+          <p>Designers, drivers, tutors, consultants. Income arrives from several places and nobody withholds anything for you.</p>
+          <ul class="tags"><li>1099-NEC</li><li>1099-K</li><li>Receipts</li><li>Mileage log</li></ul>
+        </div>
+        <ul class="who-list">
+          <li><b>You send</b><span>Income forms and whatever expense records you have</span></li>
+          <li><b>We handle</b><span>Sorting income and expenses, then the return</span></li>
+          <li><b>You get</b><span>A summary plus a short list for next year</span></li>
+        </ul>
+      </article>
+      <article class="who" id="p3" role="tabpanel" aria-labelledby="t3">
+        <div class="who-main">
+          <h3>One-person businesses</h3>
+          <p>A single-owner LLC or S corporation where the owner is also the bookkeeper, the sales team and the front desk.</p>
+          <ul class="tags"><li>Profit &amp; loss</li><li>Bank statements</li><li>Payroll reports</li></ul>
+        </div>
+        <ul class="who-list">
+          <li><b>You send</b><span>Year-end books or bank statements</span></li>
+          <li><b>We handle</b><span>The business return and your personal one</span></li>
+          <li><b>You get</b><span>One page for each, in the same format</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 4. PAPERS CHECKLIST -->
+<section class="sec sec-tint" id="papers">
+  <div class="wrap papers-grid">
+    <div class="sec-head">
+      <p class="tag"><span class="dot"></span>Your papers</p>
+      <h2>Check off what you have. <em>Send the rest later.</em></h2>
+      <p class="sec-sub">Tap each item as you find it. Nothing here is saved or sent. It is a list to help you get ready.</p>
+      <div class="hint-card">
+        <span class="hint-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="6.5" width="17" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12.5" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 6.5l1.2-2h4.6l1.2 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+        <p><b>Photo tips.</b> Flat surface, all four corners in the frame, no flash glare. One form per photo.</p>
+      </div>
+    </div>
+
+    <form class="check-card" id="checklist" aria-label="Papers checklist" onsubmit="return false">
+      <div class="check-top">
+        <p class="board-title">Ready to send</p>
+        <p class="check-count" aria-live="polite"><b id="chk-n">0</b> of 8</p>
+      </div>
+      <div class="check-bar" aria-hidden="true"><span id="chk-fill"></span></div>
+      <ul class="check-list">
+        <li><label><input type="checkbox"><span class="box"></span><span class="lbl">Photo ID<small>Driver's license or state ID</small></span></label></li>
+        <li><label><input type="checkbox"><span class="box"></span><span class="lbl">Last year's return<small>If someone else prepared it</small></span></label></li>
+        <li><label><input type="checkbox"><span class="box"></span><span class="lbl">Wage forms<small>W-2 from each employer</small></span></label></li>
+        <li><label><input type="checkbox"><span class="box"></span><span class="lbl">1099 forms<small>Freelance, interest, dividends</small></span></label></li>
+        <li><label><input type="checkbox"><span class="box"></span><span class="lbl">Home &amp; loan statements<small>Form 1098, property tax bill</small></span></label></li>
+        <li><label><input type="checkbox"><span class="box"></span><span class="lbl">Health coverage form<small>Form 1095-A, if you have one</small></span></label></li>
+        <li><label><input type="checkbox"><span class="box"></span><span class="lbl">Business expenses<small>Receipts, mileage, software</small></span></label></li>
+        <li><label><input type="checkbox"><span class="box"></span><span class="lbl">Bank details for refund<small>Routing and account number</small></span></label></li>
+      </ul>
+      <p class="check-foot">Missing half of this? Start anyway. We will tell you what still matters.</p>
+    </form>
+  </div>
+</section>
+
+<!-- 5. SUMMARY PAGE + OFFICE -->
+<section class="sec" id="office">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="tag"><span class="dot"></span>What you get · The office</p>
+      <h2>One page at the end. <em>Three people behind it.</em></h2>
+    </div>
+
+    <div class="bento">
+      <article class="b b-sheet reveal">
+        <div class="b-copy">
+          <h3>The <span class="nb">one-page</span> summary</h3>
+          <p>Every return ends with the same page, written for you and not for the tax agency.</p>
+        </div>
+        <div class="sheet" aria-label="Illustration: a one-page summary">
+          <div class="sheet-head"><b>Your return, on one page</b><span class="chip chip-ok">Filed</span></div>
+          <div class="sheet-row"><span class="k">What we filed</span><span class="lines"><i style="width:82%"></i><i style="width:56%"></i></span></div>
+          <div class="sheet-row"><span class="k">Refund or balance</span><span class="lines"><i class="hl" style="width:38%"></i></span></div>
+          <div class="sheet-row"><span class="k">What changed from last year</span><span class="lines"><i style="width:74%"></i><i style="width:68%"></i><i style="width:30%"></i></span></div>
+          <div class="sheet-row"><span class="k">What to keep, and how long</span><span class="lines"><i style="width:64%"></i><i style="width:44%"></i></span></div>
+          <div class="sheet-row"><span class="k">To do before next year</span><span class="lines"><i style="width:70%"></i><i style="width:52%"></i></span></div>
+          <p class="sheet-foot">Illustration. No real figures shown.</p>
+        </div>
+      </article>
+
+      <article class="b b-people reveal">
+        <h3>Who works on your return</h3>
+        <ul class="people">
+          <li><span class="av">RA</span><div><b>Renata Alvis, EA</b><small>Prepares returns · your main contact</small><em class="ph">[License line goes here]</em></div></li>
+          <li><span class="av">TO</span><div><b>Theo Okafor, CPA</b><small>Second review · business returns</small><em class="ph">[License state and number go here]</em></div></li>
+          <li><span class="av">JM</span><div><b>June Marlow</b><small>Client coordinator · papers and scheduling</small></div></li>
+        </ul>
+      </article>
+
+      <article class="b b-num reveal">
+        <p class="big">2</p>
+        <h3>people read every return</h3>
+        <p>One prepares it. A second checks it before you see it.</p>
+      </article>
+
+      <article class="b b-fee reveal">
+        <span class="chip chip-ph">Placeholder</span>
+        <h3>Fees, before we start</h3>
+        <p>You get a written quote after the first conversation.</p>
+        <p class="ph-box">Your fee schedule or “starting from” prices go here.</p>
+      </article>
+
+      <article class="b b-quote reveal">
+        <span class="chip chip-ph">Placeholder</span>
+        <svg class="q" viewBox="0 0 40 30" aria-hidden="true"><path d="M2 28V16C2 7 7 2 16 2v6c-4 0-6 2-6 6h6v14zM24 28V16c0-9 5-14 14-14v6c-4 0-6 2-6 6h6v14z" fill="currentColor"/></svg>
+        <p class="quote">Your client's words go here.</p>
+        <p class="quote-by">Client name, with their permission</p>
+      </article>
+
+      <article class="b b-hours reveal">
+        <h3>Office hours</h3>
+        <dl class="hours">
+          <div><dt>Mon – Thu</dt><dd>9 am – 5:30 pm</dd></div>
+          <div><dt>Friday</dt><dd>9 am – 1 pm</dd></div>
+          <div><dt>Sat – Sun</dt><dd>Closed</dd></div>
+        </dl>
+        <p class="fine">Messages sent after hours are read the next business day.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 6. FAQ -->
+<section class="sec sec-tint" id="faq">
+  <div class="wrap faq-grid">
+    <div class="sec-head">
+      <p class="tag"><span class="dot"></span>Questions</p>
+      <h2>What people ask <em>before they start.</em></h2>
+      <p class="sec-sub">Not on the list? Use the form below and ask it in your own words.</p>
+    </div>
+    <div class="faq">
+      <details name="faq" open>
+        <summary><span>Do I have to come to the office?</span><i aria-hidden="true"></i></summary>
+        <p>No. Most clients never do. Papers come in by phone, questions go back and forth by text or email, and you sign on your screen. You are welcome to visit if you prefer paper.</p>
+      </details>
+      <details name="faq">
+        <summary><span>What happens after I send the form?</span><i aria-hidden="true"></i></summary>
+        <p>June reads it and replies within one business day with a time to talk and a private upload link. The first conversation is short and is about your situation, not a sales pitch.</p>
+      </details>
+      <details name="faq">
+        <summary><span>How do I know where my return stands?</span><i aria-hidden="true"></i></summary>
+        <p>Your status page shows one of four steps: received, in review, ready to sign, or filed. You also get a message each time it moves.</p>
+      </details>
+      <details name="faq">
+        <summary><span>Is it safe to send photos of my forms?</span><i aria-hidden="true"></i></summary>
+        <p>You upload through a private link instead of email or text. Please never put a Social Security number in the contact form on this page.</p>
+      </details>
+      <details name="faq">
+        <summary><span>I got a letter about a past return. Can you help?</span><i aria-hidden="true"></i></summary>
+        <p>Send us a photo of the letter. We will tell you what it is asking for and whether it is something we take on.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 7. CONTACT -->
+<section class="sec sec-dark contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-copy">
+      <p class="tag"><span class="dot"></span>Get started</p>
+      <h2>Three fields now. <em>A reply within one business day.</em></h2>
+      <ol class="mini-steps">
+        <li><b>1</b><span>You send this form</span></li>
+        <li><b>2</b><span>June replies with a time and an upload link</span></li>
+        <li><b>3</b><span>You send papers when you are ready</span></li>
+      </ol>
+      <ul class="cells">
+        <li><small>Call</small><a href="tel:+15550100163">(555) 010-0163</a></li>
+        <li><small>Email</small><a href="mailto:hello@example.com">hello@example.com</a></li>
+        <li><small>Visit</small><span>123 Sample Street, Suite 2, Springfield</span></li>
+        <li><small>Hours</small><span>Mon – Thu 9 – 5:30 · Fri 9 – 1</span></li>
+      </ul>
+    </div>
+
+    <form class="form-card" id="contact-form" novalidate>
+      <p class="board-title">Request a consultation</p>
+      <label for="f-name">Your name</label>
+      <input id="f-name" name="name" type="text" autocomplete="name" required>
+      <label for="f-email">Email</label>
+      <input id="f-email" name="email" type="email" autocomplete="email" required>
+      <label for="f-msg">What can we help with?</label>
+      <textarea id="f-msg" name="message" rows="4" required placeholder="For example: I freelance and have never filed on my own."></textarea>
+      <p class="form-hint">Please do not include a Social Security number.</p>
+      <button class="btn btn-main" type="submit">Send request</button>
+      <p class="form-done" id="form-done" role="status" hidden><b>This is a sample form — nothing was sent.</b> On a real site, you would see a confirmation here and the office would get your message.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <p class="brand-name">Slatewater <span>Tax</span></p>
+      <p>Tax returns for individuals, freelancers and one-person businesses.</p>
+    </div>
+    <div>
+      <p class="foot-h">On this page</p>
+      <ul><li><a href="#how">How it works</a></li><li><a href="#who">Who we help</a></li><li><a href="#papers">Your papers</a></li><li><a href="#office">The office</a></li><li><a href="#faq">Questions</a></li></ul>
+    </div>
+    <div>
+      <p class="foot-h">Contact</p>
+      <ul><li><a href="tel:+15550100163">(555) 010-0163</a></li><li><a href="mailto:hello@example.com">hello@example.com</a></li><li><span>123 Sample Street<br>Suite 2, Springfield</span></li></ul>
+    </div>
+    <div>
+      <p class="foot-h">Hours</p>
+      <ul><li><span>Mon – Thu · 9 am – 5:30 pm</span></li><li><span>Friday · 9 am – 1 pm</span></li><li><span>Sat – Sun · Closed</span></li></ul>
+    </div>
+  </div>
+  <div class="wrap foot-note">
+    <p>This is a sample site built by GimDevelope to show what a small accounting firm's website can look like. The firm, people and contact details are fictional.</p>
+    <p>Nothing on this page is tax advice.</p>
+  </div>
+</footer>
+
+<div class="dock" role="navigation" aria-label="Quick contact">
+  <a href="tel:+15550100163"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h3l1.4 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.4v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Call</a>
+  <a class="dock-main" href="#contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v10.5H9.5L5 19.5V16H4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Message</a>
+</div>
+
+<script src="site.js" defer></script>
+</body>
+</html>
