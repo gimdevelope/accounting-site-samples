@@ -22,3 +22,22 @@
     form.reset();
   });
 })();
+
+(function () {
+  var root = document.documentElement;
+  var items = document.querySelectorAll('[data-reveal]');
+  if (!items.length || !('IntersectionObserver' in window)) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  root.classList.add('js');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  items.forEach(function (el) { io.observe(el); });
+  /* safety: never leave content hidden (full-page captures, print, slow observers) */
+  setTimeout(function () {
+    root.classList.add('reveal-done');
+    items.forEach(function (el) { el.classList.add('in'); });
+  }, 3500);
+})();
